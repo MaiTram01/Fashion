@@ -2,286 +2,139 @@ import React from 'react'
 
 export default function Content() {
   return (
-    <div>
-    {/* Breadcrumb Section Begin */}
-    <div className="breacrumb-section">
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-12">
-            <div className="breadcrumb-text">
-              <a href="#"><i className="fa fa-home" /> Home</a>
-              <span>Shop</span>
-            </div>
-          </div>
-        </div>
+    <div id="content">
+{/* this is the content for menu */}
+<div id="left-content">
+   <h1>Category</h1>
+   <ul className="drop">
+      <li><a href="#">Menu item 1</a></li>
+      <li><a href="#">Menu item 2</a></li>
+      <li>
+         <a href="#">Menu item 3</a>
+         <ul className="drop">
+            <li><a href="#">Menu item 3.1</a></li>
+            <li><a href="#">Menu item 3.2</a></li>
+            <li><a href="#">Menu item 3.3</a></li>
+            <li>
+               <a href="#">Menu item 3.4</a>
+               <ul className="drop">
+                  <li><a href="#">Menu item 3.4.1</a></li>
+                  <li><a href="#">Menu item 3.4.2</a></li>
+                  <li><a href="#">Menu item 3.4.3</a></li>
+                  <li><a href="#">Menu item 3.4.4</a></li>
+                  <li>
+                     <a href="#">Menu item 3.4.5</a>
+                     <ul className="drop">
+                        <li><a href="#">Menu item 3.4.5.1</a></li>
+                        <li><a href="#">Menu item 3.4.5.2</a></li>
+                        <li><a href="#">Menu item 3.4.5.3</a></li>
+                        <li>
+                           <a href="#">Menu item 3.4.5.4</a>
+                           <ul className="drop">
+                              <li><a href="#">Menu item 3.4.5.1.1</a></li>
+                              <li><a href="#">Menu item 3.4.5.1.2</a></li>
+                              <li><a href="#">Menu item 3.4.5.1.3</a></li>
+                              <li>
+                                 <a href="#">Menu item 3.4.5.1.4</a>
+                                 <ul className="drop">
+                                    <li><a href="#">Menu item 3.4.5.1.4.1</a></li>
+                                    <li><a href="#">Menu item 3.4.5.1.4.2</a></li>
+                                    <li><a href="#">Menu item 3.4.5.1.4.3</a></li>
+                                    <li><a href="#">Menu item 3.4.5.1.4.4</a></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </li>
+         </ul>
+      </li>
+      <li><a href="#">Menu item 4</a></li>
+      <li><a href="#">Menu item 5</a></li>
+      <li><a href="#">Menu item 6</a></li>
+   </ul>
+</div>
+{/* this is a content for item  */}
+<div id="right-content">
+<h2>Product : </h2>
+<div id="products">
+<div className="product">
+<div className="text">
+   <div className="p-name"><a href="item.html">LUMIX DMC-G2</a></div>
+</div>
+<div className="p-img">
+   <img src="camera-shop/images/mayanh1.jpg" width={200} height={200} />
+</div>
+<div className="text">
+   <div className="p-cat">DIGITAL CAMERA </div>
+   <div className="p-price">Please Call</div>
+   <input type="button" className="button" name="add" defaultValue="Add to cart" />
+</div>
+<div className="clear" />
+</div>
+<div className="product">
+   <div className="text">
+      <div className="p-name"><a href="item.html">LUMIX DMC-G3</a></div>
+   </div>
+   <div className="p-img">
+      <img src="camera-shop/images/mayanh2.jpg" width={200} height={200} />
+   </div>
+   <div className="text">
+      <div className="p-cat">DIGITAL CAMERA </div>
+      <div className="p-price">Please Call</div>
+      <input type="button" className="button" name="add" defaultValue="Add to cart" />
+   </div>
+   <div className="clear" />
+   </div>
+   <div className="product">
+      <div className="text">
+         <div className="p-name"><a href="item.html">LUMIX DMC-G2</a></div>
       </div>
-    </div>
-    {/* Breadcrumb Section Begin */}
-    {/* Product Shop Section Begin */}
-    <section className="product-shop spad">
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-12 order-1 order-lg-2">
-            <div className="product-list">
-              <div className="row">
-                <div className="col-lg-4 col-sm-6">
-                  <div className="product-item">
-                    <div className="pi-pic">
-                      <img src="img/products/product-1.jpg" alt="" />
-                      <div className="sale pp-sale">Sale</div>
-                      <div className="icon">
-                        <i className="icon_heart_alt" />
-                      </div>
-                      <ul>
-                        <li className="w-icon active"><a href="#"><i className="icon_bag_alt" /></a></li>
-                        <li className="quick-view"><a href="#">+ Add Cart</a></li>
-                        <li className="w-icon"><a href="#"><i className="fa fa-random" /></a></li>
-                      </ul>
-                    </div>
-                    <div className="pi-text">
-                      <div className="catagory-name">Towel</div>
-                      <a href="#">
-                        <h5>Pure Pineapple</h5>
-                      </a>
-                      <div className="product-price">
-                        ₫14.00
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-sm-6">
-                  <div className="product-item">
-                    <div className="pi-pic">
-                      <img src="img/products/product-2.jpg" alt="" />
-                      <div className="icon">
-                        <i className="icon_heart_alt" />
-                      </div>
-                      <ul>
-                        <li className="w-icon active"><a href="#"><i className="icon_bag_alt" /></a></li>
-                        <li className="quick-view"><a href="#">+ Add Cart</a></li>
-                        <li className="w-icon"><a href="#"><i className="fa fa-random" /></a></li>
-                      </ul>
-                    </div>
-                    <div className="pi-text">
-                      <div className="catagory-name">Coat</div>
-                      <a href="#">
-                        <h5>Guangzhou sweater</h5>
-                      </a>
-                      <div className="product-price">
-                        ₫13.00
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-sm-6">
-                  <div className="product-item">
-                    <div className="pi-pic">
-                      <img src="img/products/product-3.jpg" alt="" />
-                      <div className="icon">
-                        <i className="icon_heart_alt" />
-                      </div>
-                      <ul>
-                        <li className="w-icon active"><a href="#"><i className="icon_bag_alt" /></a></li>
-                        <li className="quick-view"><a href="#">+ Add Cart</a></li>
-                        <li className="w-icon"><a href="#"><i className="fa fa-random" /></a></li>
-                      </ul>
-                    </div>
-                    <div className="pi-text">
-                      <div className="catagory-name">Shoes</div>
-                      <a href="#">
-                        <h5>Guangzhou sweater</h5>
-                      </a>
-                      <div className="product-price">
-                        ₫34.00
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-sm-6">
-                  <div className="product-item">
-                    <div className="pi-pic">
-                      <img src="img/products/product-4.jpg" alt="" />
-                      <div className="icon">
-                        <i className="icon_heart_alt" />
-                      </div>
-                      <ul>
-                        <li className="w-icon active"><a href="#"><i className="icon_bag_alt" /></a></li>
-                        <li className="quick-view"><a href="#">+ Add Cart</a></li>
-                        <li className="w-icon"><a href="#"><i className="fa fa-random" /></a></li>
-                      </ul>
-                    </div>
-                    <div className="pi-text">
-                      <div className="catagory-name">Coat</div>
-                      <a href="#">
-                        <h5>Microfiber Wool Scarf</h5>
-                      </a>
-                      <div className="product-price">
-                        ₫64.00
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-sm-6">
-                  <div className="product-item">
-                    <div className="pi-pic">
-                      <img src="img/products/product-5.jpg" alt="" />
-                      <div className="icon">
-                        <i className="icon_heart_alt" />
-                      </div>
-                      <ul>
-                        <li className="w-icon active"><a href="#"><i className="icon_bag_alt" /></a></li>
-                        <li className="quick-view"><a href="#">+ Add Cart</a></li>
-                        <li className="w-icon"><a href="#"><i className="fa fa-random" /></a></li>
-                      </ul>
-                    </div>
-                    <div className="pi-text">
-                      <div className="catagory-name">Shoes</div>
-                      <a href="#">
-                        <h5>Men's Painted Hat</h5>
-                      </a>
-                      <div className="product-price">
-                        ₫44.00
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-sm-6">
-                  <div className="product-item">
-                    <div className="pi-pic">
-                      <img src="img/products/product-6.jpg" alt="" />
-                      <div className="icon">
-                        <i className="icon_heart_alt" />
-                      </div>
-                      <ul>
-                        <li className="w-icon active"><a href="#"><i className="icon_bag_alt" /></a></li>
-                        <li className="quick-view"><a href="#">+ Add Cart</a></li>
-                        <li className="w-icon"><a href="#"><i className="fa fa-random" /></a></li>
-                      </ul>
-                    </div>
-                    <div className="pi-text">
-                      <div className="catagory-name">Shoes</div>
-                      <a href="#">
-                        <h5>Converse Shoes</h5>
-                      </a>
-                      <div className="product-price">
-                        ₫34.00
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-sm-6">
-                  <div className="product-item">
-                    <div className="pi-pic">
-                      <img src="img/products/product-7.jpg" alt="" />
-                      <div className="sale pp-sale">Sale</div>
-                      <div className="icon">
-                        <i className="icon_heart_alt" />
-                      </div>
-                      <ul>
-                        <li className="w-icon active"><a href="#"><i className="icon_bag_alt" /></a></li>
-                        <li className="quick-view"><a href="#">+ Add Cart</a></li>
-                        <li className="w-icon"><a href="#"><i className="fa fa-random" /></a></li>
-                      </ul>
-                    </div>
-                    <div className="pi-text">
-                      <div className="catagory-name">Towel</div>
-                      <a href="#">
-                        <h5>Pure Pineapple</h5>
-                      </a>
-                      <div className="product-price">
-                        ₫64.00
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-sm-6">
-                  <div className="product-item">
-                    <div className="pi-pic">
-                      <img src="img/products/product-8.jpg" alt="" />
-                      <div className="icon">
-                        <i className="icon_heart_alt" />
-                      </div>
-                      <ul>
-                        <li className="w-icon active"><a href="#"><i className="icon_bag_alt" /></a></li>
-                        <li className="quick-view"><a href="#">+ Add Cart</a></li>
-                        <li className="w-icon"><a href="#"><i className="fa fa-random" /></a></li>
-                      </ul>
-                    </div>
-                    <div className="pi-text">
-                      <div className="catagory-name">Coat</div>
-                      <a href="#">
-                        <h5>2 Layer Windbreaker</h5>
-                      </a>
-                      <div className="product-price">
-                        ₫44.00
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-sm-6">
-                  <div className="product-item">
-                    <div className="pi-pic">
-                      <img src="img/products/product-9.jpg" alt="" />
-                      <div className="icon">
-                        <i className="icon_heart_alt" />
-                      </div>
-                      <ul>
-                        <li className="w-icon active"><a href="#"><i className="icon_bag_alt" /></a></li>
-                        <li className="quick-view"><a href="#">+ Add Cart</a></li>
-                        <li className="w-icon"><a href="#"><i className="fa fa-random" /></a></li>
-                      </ul>
-                    </div>
-                    <div className="pi-text">
-                      <div className="catagory-name">Shoes</div>
-                      <a href="#">
-                        <h5>Converse Shoes</h5>
-                      </a>
-                      <div className="product-price">
-                        ₫34.00
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="p-img">
+         <img src="camera-shop/images/mayanh3.jpg" width={200} height={200} />
       </div>
-    </section>
-    {/* Product Shop Section End */}
-    {/* Partner Logo Section Begin */}
-    <div className="partner-logo">
-      <div className="container">
-        <div className="logo-carousel owl-carousel">
-          <div className="logo-item">
-            <div className="tablecell-inner">
-              <img src="img/logo-carousel/logo-1.png" alt="" />
-            </div>
-          </div>
-          <div className="logo-item">
-            <div className="tablecell-inner">
-              <img src="img/logo-carousel/logo-2.png" alt="" />
-            </div>
-          </div>
-          <div className="logo-item">
-            <div className="tablecell-inner">
-              <img src="img/logo-carousel/logo-3.png" alt="" />
-            </div>
-          </div>
-          <div className="logo-item">
-            <div className="tablecell-inner">
-              <img src="img/logo-carousel/logo-4.png" alt="" />
-            </div>
-          </div>
-          <div className="logo-item">
-            <div className="tablecell-inner">
-              <img src="img/logo-carousel/logo-5.png" alt="" />
-            </div>
-          </div>
-        </div>
+      <div className="text">
+         <div className="p-cat">DIGITAL CAMERA </div>
+         <div className="p-price">Please Call</div>
+         <input type="button" className="button" name="add" defaultValue="Add to cart" />
       </div>
-    </div>
-    {/* Partner Logo Section End */}
-  </div>
+      <div className="clear" />
+      </div>
+      <div className="product">
+         <div className="text">
+            <div className="p-name"><a href="item.html">LUMIX DMC-G3</a></div>
+         </div>
+         <div className="p-img">
+            <img src="camera-shop/images/mayanh2.jpg" width={200} height={200} />
+         </div>
+         <div className="text">
+            <div className="p-cat">DIGITAL CAMERA </div>
+            <div className="p-price">Please Call</div>
+            <input type="button" className="button" name="add" defaultValue="Add to cart" />
+         </div>
+         <div className="clear" />
+         </div>
+         <div className="product">
+            <div className="text">
+               <div className="p-name"><a href="item.html">LUMIX DMC-G2</a></div>
+            </div>
+            <div className="p-img">
+               <img src="camera-shop/images/mayanh3.jpg" width={200} height={200} />
+            </div>
+            <div className="text">
+               <div className="p-cat">DIGITAL CAMERA </div>
+               <div className="p-price">Please Call</div>
+               <input type="button" className="button" name="add" defaultValue="Add to cart" />
+            </div>
+            <div className="clear" />
+            </div>
+            <div style={{clear: 'both'}} />
+         </div>
+         <div style={{clear: 'both'}} />
+      </div>
+      <div style={{clear: 'both'}} />
+   </div>
   )
 }

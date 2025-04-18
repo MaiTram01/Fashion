@@ -3,6 +3,7 @@ import './App.css';
 import Header from '../Header/Header';
 import Content from '../Content/Content';
 import Footer from '../Footer/Footer';
+import Items from "../Items.js"
 // import { BrowserRouter, Routes, Route, Link} from "react-router-dom";
 // import Function from '../Function';
 // import PrivateRoute from '../PrivateRoute';
@@ -61,7 +62,25 @@ function App() {
     <Header/>
     <Content/>
     <Footer/>   
-</div>
+    </div>
+     // <div style={{
+    //   display: 'flex',
+    //   flexWrap: 'wrap',
+    //   gap: '20px',
+    //   // justifyContent: 'center',
+    //   maxWidth: '900px',
+    //   margin: 'auto'
+    // }}>
+    //   <Card name="Áo hoodie" price="250.000" image="https://cdn11.dienmaycholon.vn/filewebdmclnew/public/userupload/files/Image%20FP_2024/hinh-anime-2.jpg" />
+    //   <Card name="Áo khoác nữ" price="300.000" image="https://nano-ceramic.vn/wp-content/uploads/2024/12/300-hinh-anh-anime-cute-de-thuong-lam-hinh-nen-cuc-chat.jpg" />
+    //   <Card name="Quần jean" price="280.000" image="https://play-lh.googleusercontent.com/7Ac5TgaL15Ra4bvFVHJKCdJp4qvnL4djZj5bKc6RN-MZjzrvkeHbJytek0NPTSdZcp8" />
+    //   <Card name="Váy công sở" price="350.000" image="https://cdn11.dienmaycholon.vn/filewebdmclnew/public/userupload/files/Image%20FP_2024/hinh-anime-3.jpg" />
+    //   <Card name="Giày sneaker" price="500.000" image="https://thuthuatnhanh.com/wp-content/uploads/2019/10/hinh-anh-anime-nu-3d-de-thuong.jpg" />
+    //   <Card name="Giày sneaker" price="500.000" image="https://thuthuatnhanh.com/wp-content/uploads/2019/10/hinh-anh-anime-nu-3d-de-thuong.jpg" />
+    //   <Card name="Giày sneaker" price="500.000" image="https://thuthuatnhanh.com/wp-content/uploads/2019/10/hinh-anh-anime-nu-3d-de-thuong.jpg" />
+    //   <Card name="Giày sneaker" price="500.000" image="https://thuthuatnhanh.com/wp-content/uploads/2019/10/hinh-anh-anime-nu-3d-de-thuong.jpg" />
+    // </div>
+    // <Items width="200px" height="200px" color="yellow" />
 );
 }
 

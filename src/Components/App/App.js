@@ -3,7 +3,7 @@ import './App.css';
 import Header from '../Header/Header';
 import Content from '../Content/Content';
 import Footer from '../Footer/Footer';
-import State from '../Content/ClassAcreage';
+import State from '../Content/State1';
 
 
 function App() {

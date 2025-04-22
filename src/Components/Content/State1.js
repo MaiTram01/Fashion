@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Data from './Data';
+import { Data } from './Data'
 
 export default class State1 extends Component {
   constructor(props) {

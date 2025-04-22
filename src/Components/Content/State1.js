@@ -14,7 +14,7 @@ export default class State1 extends Component {
           <Card 
             key={index}
             name={item.name}
-            img={item.img}
+            img={item.image}
             category={item.category}
             price={item.price}
           />

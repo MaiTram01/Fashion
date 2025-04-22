@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Data } from './Data'
-
+import Card from './Card'
 export default class State1 extends Component {
   constructor(props) {
     super(props); 
@@ -11,12 +11,13 @@ export default class State1 extends Component {
     return (
       <div>
         {this.state.arr.map((item, index) => (
-          <div key={index}>
-            <h1>Tên sản phẩm:{item.name}</h1>
-            <img src={item.img}></img>
-            <p>Thể loại:{item.category}</p>
-            <p>Giá:{item.price}</p>
-          </div>
+          <Card 
+            key={index}
+            name={item.name}
+            img={item.img}
+            category={item.category}
+            price={item.price}
+          />
         ))}
       </div>
     );

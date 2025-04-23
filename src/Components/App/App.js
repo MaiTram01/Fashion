@@ -1,8 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from '../Header/Header';
-import Content from '../Content/Content';
-import Footer from '../Footer/Footer';
+import Header from '../Header/ClassHeader';
+import Content from '../Content/ClassContent';
+import Footer from '../Footer/ClassFooter';
 
 
 function App() {

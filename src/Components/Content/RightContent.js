@@ -32,7 +32,7 @@ function RightContent() {
 
     useEffect(() => {
         // Gọi API khi component mount
-        fetch('https://656ca88ee1e03bfd572e9c16.mockapi.io/products')
+        fetch('https://680968541f1a52874cdcc82c.mockapi.io/api/products/products')
             .then(res => res.json())
             .then(data => {
                 setProducts(data); 
@@ -51,7 +51,7 @@ function RightContent() {
                             <Card
                                 key={item.id}
                                 name={item.name}
-                                img={item.avatar}
+                                img={item.image}
                                 category={item.category}
                                 price={item.price}
                             />

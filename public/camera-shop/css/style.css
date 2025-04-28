@@ -7,7 +7,8 @@ body {
 #container {
 	width: 1000px;
 	margin: 0 auto;
-	border: 1px solid black;
+	/* border: 1px solid black; */
+	/* background-color: rgb(234, 244, 244); */
 }
 
 #header {
@@ -159,14 +160,14 @@ ul.drop li:hover > ul.drop{
 
 .product {
 	width: 230px;
-    height: 276px;
+    /* height: 276px; */
     margin: 5px;
     padding: 5px;
     background-color: #ffffff;
     float: left;
 }
 .product .text {
-    width: 98%;d
+    width: 98%;
     float: right;
     text-align: center;
 }

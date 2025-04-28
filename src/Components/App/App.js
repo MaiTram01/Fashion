@@ -1,10 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from '../Header/Header';
-import Content from '../Content/Content';
+import Header from '../Header/MainHeader.js';
+import Content from '../Content/Display.js';
 import Footer from '../Footer/Footer';
 import Items from "../Items.js"
-// import { BrowserRouter, Routes, Route, Link} from "react-router-dom";
+import Display from '../Content/Display.js';
+import MainHeader from '../Header/MainHeader.js';
+import { BrowserRouter, Routes, Route, Link} from "react-router-dom";
 // import Function from '../Function';
 // import PrivateRoute from '../PrivateRoute';
 // import { useState } from 'react';
@@ -48,21 +50,23 @@ import Items from "../Items.js"
 function App() {
   // const [isLogin, setIsopenModal] = useState(false);
   return (
-    // <BrowserRouter>
-    //   <Routes>
-    //     <Route path="/" element={<HomePage />} />
-    //     <Route path="/login" element={<Login />} />
-    //     {/* <Route path="/user" element={<User />} /> */}
-    //     <Route path="/Function" element={<Function />} />
-    //     <Route path="*" element={<Not/>} />
-    //     <Route path="/user" element={<PrivateRoute isLogin={isLogin}><User/></PrivateRoute>} />
-    //   </Routes>
-    // </BrowserRouter>
-    <div id="container">
-    <Header/>
-    <Content/>
-    <Footer/>   
-    </div>
+    <BrowserRouter>
+      <Routes>
+      <Route path="/" element={<Display />} />
+      <Route path="/add" element={<MainHeader />} />
+        {/* <Route path="/" element={<HomePage />} /> */}
+        {/* <Route path="/login" element={<Login />} /> */}
+        {/* <Route path="/user" element={<User />} /> */}
+        {/* <Route path="/Function" element={<Function />} /> */}
+        {/* <Route path="*" element={<Not/>} /> */}
+        {/* <Route path="/user" element={<PrivateRoute isLogin={isLogin}><User/></PrivateRoute>} /> */}
+      </Routes>
+    </BrowserRouter>
+    // <div id="container">
+    // {/* <Header/> */}
+    // <Content/>
+    // {/* <Footer/>    */}
+    // </div>
      // <div style={{
     //   display: 'flex',
     //   flexWrap: 'wrap',
